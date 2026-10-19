@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background: #f4f6f8;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+hr {
+    border: 0;
+    background: #e2e8f0;
+    height: 1px;
+}
+
+header {
+    text-align: center;
+    color: #1e293b;
+}
+
+header .judul {
+    font-size: 20pt;
+}
+
+header .deskripsi {
+    font-size: 11pt;
+    color: #64748b;
+}
+
+.wrap {
+    width: 1300px;
+    margin: 25px auto;
+}
+
+nav.menu ul {
+    display: flex;
+    overflow: hidden;
+    color: #fff;
+    list-style: none;
+    float: left;
+    padding: 0;
+    width: 100%;
+    margin: 0 0 25px 0;
+    background: #3b82f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+nav.menu ul li {
+    margin: 0;
+    float: left;
+}
+
+nav.menu ul a {
+    padding: 25px;
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+nav.menu ul a:hover {
+    text-decoration: none;
+    background: #2563eb;
+}
+
+.sidebar {
+    float: right;
+    width: 275px;
+}
+
+.sidebar .widget {
+    padding: 25px;
+    margin: 0 0 25px 0;
+    background: #fff;
+    border-bottom: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px;
+}
+
+.sidebar .widget h2 {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #0f172a;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;	
+}
+
+.blog {
+    float: left;
+}
+
+.conteudo {
+    width: 950px;
+    padding: 30px;
+    margin: 0 0 25px 0;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.conteudo h1 {
+    padding: 0;
+    margin: 0 0 15px;
+    font-weight: 600;
+    color: #1e293b;
+    font-family: Georgia, serif;
+}
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 1300px) {
+    .header {
+        position: inherit;
+    }
+
+    .wrap {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 20px 0 0;
+        float: none;
+    }
+
+    .sidebar .widget {
+        padding: 20px;
+    }
+
+    nav.menu ul {
+        width: 100%;
+    }
+
+	nav.menu ul{
+		float: inherit;
+	}
+
+    nav.menu ul li {
+        float: inherit;
+		margin: 0;
+
+    }
+
+    nav.menu ul a {
+        padding: 15px ;
+        font-size: 15px;
+		border-top:1px solid #1abf9f;
+        border-bottom:1px solid #16a085;
+    }
+
+
+    }
+
+    .blog {
+        width: 100%;
+        float: none;
+    }
+
+    .conteudo {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #e2e8f0;
+        padding: 20px;
+    }
